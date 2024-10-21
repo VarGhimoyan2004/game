@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 10px;
+}
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #1e90ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+.hidden {
+  background-color: #333;
+  color: #333;
+}
+.matched {
+  visibility: hidden;
+}
